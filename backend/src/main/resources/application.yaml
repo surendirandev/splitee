@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: expense-tracker
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=expense-tracker;TrustServerCertificate=True
+    username: local
+    password:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    open-in-view: false
